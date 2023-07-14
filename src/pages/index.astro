@@ -9,12 +9,16 @@ import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
+import IconLocation from '../components/IconLocation.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
+import EducationAUDI from '../components/EducationAUDI.astro';
+import EducationTHALES from '../components/EducationTHALES.astro';
+import EducationZF from '../components/EducationZF.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -30,19 +34,19 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, je m'appelle Arthur Chevalier"
+					tagline="Je suis étudiant en 5ème année à l'Ecole Nationale d'Ingénieurs de Brest."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
+						<Pill><IconLocation icon="location" size="1.33em" /> Brest</Pill>
 						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Arthur CHEVALIER"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
@@ -50,13 +54,19 @@ const projects = (await getCollection('work'))
 			</header>
 
 			<Skills />
+
+			<h3>Mes expériences</h3>
+
+			<EducationAUDI/>
+			<EducationTHALES/>
+			<EducationZF/>
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Mes projets</h3>
+					<p>Voici les projets sur lesquels j'ai travaillé ces dernières années.</p>
 				</header>
 
 				<div class="gallery">

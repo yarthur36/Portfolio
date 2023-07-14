@@ -1,0 +1,70 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box">
+	<div class="stack gap-2 lg:gap-4">
+		<div>
+			<img
+			alt="Arthur CHEVALIER"
+			width="100"
+			height="100"
+			src="/assets/logo ZF.jpg"
+			/>
+			<h2>Autocruise Groupe ZF - stage</h2>
+		</div>
+		<h5>
+			Janvier 2021
+		</h5>
+		<p>Lors de ce stage de 1 mois, j'ai eu l'opportunité de découvrir une chaîne de production de capteurs et radars d'assistance à la conduite pour voitures et camions.
+			<br> J'ai donc appris les différents corps de métier qui travaillent mains dans la mains afin de développer, produire et vendre ces produits.
+		</p>
+		
+		<ul>
+			<li>Participation aux différentes missions en tant qu'opérateur de production de radars.</li>
+			<li>Supporter l'équipe de qualité dans leur tâches de traitement des produits déffectueux et de leur cycle de vie.</li>
+		</ul>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.box img{
+		float: left;
+		margin-right: 2vw;
+	}
+
+	.box h2{
+		margin-top: 2vh;
+	}
+
+	.box ul{
+		list-style-type: none;
+	}
+
+	.box li::before{
+		content: "\2022"; /* Utilise un caractère de puce (par exemple, un rond) */
+		color: blueviolet; /* Couleur des points */
+		display: inline-block;
+		width: 0.8em; /* Ajustez la taille de la puce */
+  		height: 1em; /* Ajustez la taille de la puce */
+		margin-left: -1em;	
+		font-size: 30px;
+		position : relative;
+		top: 0.6vh;
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+	}
+</style>

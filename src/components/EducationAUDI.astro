@@ -1,0 +1,72 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box">
+	<div class="stack gap-2 lg:gap-4">
+		<div>
+			<img
+			alt="Arthur CHEVALIER"
+			width="100"
+			height="100"
+			src="/assets/logo audi.png"
+			/>
+			<h2>AUDI BRUSSELS - stage</h2>
+		</div>
+		<h5>
+			Juin - Juillet 2023
+		</h5>
+		<p>Développement d'une application web de reporting des résultats d'analyses de la production de batteries haute-tension des AUDI Q8 e-tron. <br> E-Analytics est 
+		une application web dynamique créée à partir du framework AngularJs et qui permet d'analyser les différentes données de tests électriques et électroniques qui sont effectués 
+		sur les batteries. <br> Résultats des tests, statistiques, top erreurs et dashboard font parties des fonctionnalitées principales de l'application.</p>
+		
+		<ul>
+			<li>Développement du frontend : HTML, CSS & JS avec framework AngularJs.</li>
+			<li>Déploiement de l'application sur serveur de test.</li>
+			<li>Fusion des deux projets E-Analytics : analyse de la production de voitures et de la production de batteries.</li>
+			<li>Side project : Développement d'un script Powershell avec interface graphique permettant le déploiement de fichier sur des installations à distance.</li>
+		</ul>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.box img{
+		float: left;
+		margin-right: 2vw;
+	}
+
+	.box h2{
+		margin-top: 2vh;
+	}
+
+	.box ul{
+		list-style-type: none;
+	}
+
+	.box li::before{
+		content: "\2022"; /* Utilise un caractère de puce (par exemple, un rond) */
+		color: blueviolet; /* Couleur des points */
+		display: inline-block;
+		width: 0.8em; /* Ajustez la taille de la puce */
+  		height: 1em; /* Ajustez la taille de la puce */
+		margin-left: -1em;	
+		font-size: 30px;
+		position : relative;
+		top: 0.6vh;
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+	}
+</style>
