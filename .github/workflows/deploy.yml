@@ -17,7 +17,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
     - name: Check out your repository using git
       uses: actions/checkout@v3
 
